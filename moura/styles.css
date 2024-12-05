@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor1:#2450A6;
+    --cor2:#022859;
+    --cor3:#0477BF;
+    --cor4:#F29F05;
+    --cor5:#F2B33D;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+header {
+    background: #022859;
+    color: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #FFD700;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #00458A, #0073E6);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    padding: 10px 20px;
+    background: #FFD700;
+    color: #00458A;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.hero .btn:hover {
+    background: #FFC300;
+}
+
+/* Produtos */
+.products {
+    padding: 50px 0;
+    text-align: center;
+    background: #F9F9F9;
+}
+
+.products .product-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-item {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-10px);
+}
+
+.product-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Sobre */
+.about {
+    padding: 50px 0;
+    background: #00458A;
+    color: white;
+    text-align: center;
+}
+
+/* Contato */
+.contact {
+    padding: 50px 0;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact form input, .contact form textarea, .contact form button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact form button {
+    background: #00458A;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact form button:hover {
+    background: #003366;
+}
+
+/* Rodapé */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
