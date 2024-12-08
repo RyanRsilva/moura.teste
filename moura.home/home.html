@@ -6,6 +6,7 @@
     <title>Inspiração Moura</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="../imagens/moura logo png.png" type="image/x-icon">
+    <link rel="stylesheet" href="../testes/index.html">
 </head>
 <body>
     <!-- Cabeçalho -->
@@ -28,7 +29,7 @@
         <div class="container">
             <h1>Energia que Move Você</h1>
             <p>Descubra soluções inovadoras para todas as suas necessidades de energia.</p>
-            <a href="#produtos" class="btn">Ver Produtos</a>
+            <a href="../catalogo/catalogo.html" class="btn">Ver Produtos</a>
         </div>
     </section>
 
@@ -38,19 +39,25 @@
             <h2>Nossos Produtos</h2>
             <div class="product-grid">
                 <div class="product-item">
-                    <img src="../imagens/bateria-removebg-preview.png" alt="Produto 1">
-                    <h3>Bateria Automotiva</h3>
-                    <p>Alta performance e durabilidade.</p>
+                    <a class="link" href="../catalogo/catalogo.html">
+                        <img src="../imagens/bateria-removebg-preview.png" alt="produto1">
+                        <h3>Bateria automotiva</h3>
+                        <p>Alta performance e durabilidade.</p>
+                    </a>
                 </div>
                 <div class="product-item">
-                    <img src="bateria2.jpg" alt="Produto 2">
-                    <h3>Bateria Estacionária</h3>
-                    <p>Perfeita para sistemas de energia solar.</p>
+                    <a class="link" href="../catalogo/catalogo.html">
+                        <img src="bateria2.jpg" alt="Produto 2">
+                        <h3>Bateria Estacionária</h3>
+                        <p>Perfeita para sistemas de energia solar.</p>
+                    </a>
                 </div>
                 <div class="product-item">
+                    <a class="link" href="../catalogo/catalogo.html">
                     <img src="bateria3.jpg" alt="Produto 3">
                     <h3>Bateria Tracionária</h3>
                     <p>Para veículos elétricos e industriais.</p>
+                </a>
                 </div>
             </div>
         </div>
@@ -71,7 +78,7 @@
             <form>
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
-
+                
                 <label for="email">E-mail:</label>
                 <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
 

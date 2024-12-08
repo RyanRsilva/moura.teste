@@ -42,10 +42,6 @@ header .logo {
 
 }
 
-header > img {
-    background-attachment:fixed;
-}
-
 header nav ul {
     display: flex;
     justify-content: center;
@@ -124,12 +120,19 @@ header nav ul li a:hover {
 }
 
 .product-item:hover {
-    transform: translateY(-10px);
+    transform: translatey(-10px);
+    text-decoration: none;
 }
 
 .product-item img {
     width: 100%;
     border-radius: 10px;
+    ;
+}
+
+.link {
+    text-decoration:none;
+
 }
 
 /* Sobre */
